@@ -33,7 +33,7 @@ class Stack<E> {
 
   /// Nice to have operations
 
-  // Method to peek at the top element of the stack
+  // Peek Method: Checks the top element of the stack
   E peek() => _storage.last;
 
   // Method to check if the stack is empty

@@ -26,5 +26,19 @@ void main() {
 
     // check if the stack is empty should be true
     expect(stack.isEmpty, equals(true));
+
+    const list = ['S', 'M', 'O', 'K', 'E'];
+
+    // create a stack from a list
+    final smokeStack = Stack.of(list);
+
+    // check if the top element is really 'E'
+    expect(smokeStack.peek(), equals('E'));
+
+    /* STACK CHALLENGES #1 - Reverse a List Using Stack */
+
+    expect(() {
+      print(smokeStack);
+    }, prints(matches(r'--- Top ---\nE\nK\nO\nM\nS\n-----------\n')));
   });
 }
