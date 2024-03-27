@@ -35,3 +35,18 @@ bool isValidParenthesis(String s) {
   // if the stack is empty, return true
   return stack.isEmpty;
 }
+
+
+/* 
+  How this solution works?
+
+  1. it is a fuction that accepts a String s as an argument.
+  2. It creates a stack of type String.
+  3. It loops through the string s using for loop.
+  4. If the character is an open bracket, it pushes it to the stack.
+  5. If the character is a closing bracket, it checks if the stack is empty and returns false if it is.
+  6. It checks if the top element is the opening bracket of the same type.
+  7. If the top element is not the opening bracket of the same type, it returns false.
+  8. If the stack is empty, it returns true.
+
+*/
