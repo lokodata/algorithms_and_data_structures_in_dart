@@ -13,6 +13,17 @@ class ListNode {
   int value;
   ListNode? next;
   ListNode(this.value, [this.next]);
+
+  @override
+  String toString() {
+    var result = '$value';
+    var current = next;
+    while (current != null) {
+      result += ' -> ${current.value}';
+      current = current.next;
+    }
+    return result;
+  }
 }
 
 ListNode? reverseList(ListNode? head) {
@@ -39,7 +50,6 @@ ListNode? reverseList(ListNode? head) {
     current = next;
   }
 
-  // after the loop, the prev node will be the new head
   return prev;
 }
 
@@ -60,5 +70,4 @@ ListNode? reverseList(ListNode? head) {
     3.4. It moves the current node to the next node. current node = 2.
   4. After the loop, the prev node will be the new head. prev node = 5.
   5. It returns the prev node which is the new head. [5, 4, 3, 2, 1]
-
 */

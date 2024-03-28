@@ -4,7 +4,9 @@ This repository focuses on the implementation, problem-solving, and test case cr
 
 ## Table of Contents
 
+- **Arrays & Hashing**
 - **Stacks**
+- **Linked Lists**
 
 ## Acknowledgments
 
